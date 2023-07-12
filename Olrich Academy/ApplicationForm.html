@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Apllication Form</title>
+        <link rel="stylesheet" href="ApllicationForm.css">
+        <link rel="icon" href="AcademySolutionLogo.png" style="border-radius: 50%;">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+        <nav>
+            <div class="nav-cointainer">
+                <div class="logo">
+                    <a href="OlrichAcademy.html"><img src="TranningSolution.png" alt="Olrich Academy Logo" height="180px"></a>
+                </div>
+                <div class="home-container"><h1> Application Form </h1></div>
+                <div class="email-container">
+                    <a href="mailto:info@olrichacademy.ac.za" target="_blank">Email:info@olrichacademy.ac.za</a>
+                </div>  
+            </div>
+           
+        </nav>
+
+        <form action="nextpage.html" method="post">
+            <fieldset>
+              <legend></legend>
+              <h1>APPLICATION FORM</h1>
+              <label>Full Names:</label>
+              <input type="text" name="Full Names" size="15" required><br><br>
+              <label>Surname:</label>
+              <input type="text" name="Surname" size="15" required><br><br>
+              <label>Id Number:</label>
+              <input type="text" name="Id Number" size="15" required><br><br>
+              <label>Contact Number:</label>
+              <input type="text" name="Contact Number" size="15" required><br><br>
+              <label>Gender:</label>
+              <input type="radio" name="gender" value="male" required>Male
+              <input type="radio" name="gender" value="female" required>Female<br><br>
+              <label>Highest Grade:</label>
+              <input type="text" name="Highest Grade" size="15" required><br><br>
+              <label>Email:</label>
+              <input type="text" name="Email" size="20" required><br><br>
+              <label>Address:</label><br>
+              <textarea name="address" cols="50" rows="5" required></textarea><br><br>
+              <input id="fcl-btn" type="submit" value="Submit">
+            </fieldset>
+        </form>
+
+        <div class="pop-up">
+            <div class="pu-container">
+                <form action="">
+                    <img src="Icon.png" alt="Right Pic">
+                    <h2>Application Successfully</h2>
+                    <p>Thank for taking this Journey with Us</p>
+                </form>
+                
+            </div>
+        </div>
+
+          
+
+        <div class="Footer-Cointainer">
+            <div class="footer">
+                    <div class="Footer-Header footer-1">
+                        <h2>Company</h2>
+                        <a href="AboutUs.html">About Us</a>
+                        <a href="client.html">Clients</a>
+                    </div>
+
+                    <div class="Footer-Header footer-2">
+                        <h2>Programmes</h2>
+                        <a href="Skill_Programmes.html">Skill Programme</a>
+                        <a href="FullQualification.html">Full Qualification</a>
+                        <a href="Accreadited.html">Accreditation</a>
+                        <a href="Enquire.html">Tranning Corparate</a>
+                    </div>
+
+                    <div class="Footer-Header footer-3">
+                        <h2>Contact Us</h2>
+                        <a href="Contact.html">Contact</a>
+                        <a href="Enquire.html">Enquire</a>
+                        <a href="OlrichAcademy.docx" download>Prospectors</a>
+                        <a href="FeeList.p" download>Fee List</a>
+                    </div>
+
+                    <div class="Footer-Header footer-4">
+                        <h2>Follow Us</h2>
+                        <a href="https://www.facebook.com/profile.php?id=100094311812651" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/olrich_academy?igshid=MzNlNGNkZWQ4Mg==" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/Olrich_academy?t=To1O_CR5rHLdtEBdZWtMAA&s=08" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+
+            </div>
+
+        </div>
+
+        <script>
+             document.getElementById('fcl-btn').addEventListener('click',function(){
+                document.querySelector('.pop-up').style.display = 'flex'; 
+            });
+            document.querySelector('.close').addEventListener('click',function(){
+                document.querySelector('.pop-up').style.display = 'none'; 
+            });
+        </script>
+       
+    </body>
+
+
+
+</html>
